@@ -25,3 +25,41 @@ inputFile.addEventListener('change', function () {
 		alert("Image size more than 2MB");
 	}
 })
+
+async function fetchColorPalette() {
+	const url = 'http://colormind.io/api/';
+	const requestBody = {
+	  model: "default",
+	  input: [[0, 0, 0], "N", "N", "N", "N"]
+	};
+  
+	try {
+	  const response = await fetch(url, {
+		method: 'POST',
+		headers: {
+		  'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(requestBody),
+	  });
+  
+	  if (!response.ok) throw new Error(`Error: ${response.status}`);
+	  
+	  const data = await response.json();
+	  console.log('Color Palette:', data.result);
+	  displayColorPalette(data.result); 
+	} catch (error) {
+	  console.error('Failed to fetch palette:', error);
+	}
+  }
+
+  function displayColorPalette(colors) {
+	const paletteContainer = document.getElementById('palette');
+	paletteContainer.innerHTML = ''; 
+  
+	colors.forEach(color => {
+	  const colorDiv = document.createElement('div');
+	  colorDiv.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+	  colorDiv.classList.add('color-box');
+	  paletteContainer.appendChild(colorDiv);
+	});
+  }
