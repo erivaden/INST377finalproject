@@ -14,6 +14,7 @@ app.post('/upload', async (req, res) => {
 
   try {
     await client.connect();
+    console.log("connection successful")
     const database = client.db('INST'); 
     const collection = database.collection('images');
 
@@ -33,4 +34,20 @@ app.post('/upload', async (req, res) => {
   }
 });
 
-app.listen(3000);
+app.get('/images', async (req, res) => {
+  try {
+    await client.connect();
+    const database = client.db('INST');
+    const collection = database.collection('images');
+    const images = await collection.find({}).toArray();
+    res.status(200).json(images); 
+  }
+    catch (error) {
+      console.error('Error fetching images:', error);
+      res.status(500).json({ error: 'Failed to fetch data' });
+    }
+  
+})
+app.listen(3000, () => {
+  console.log(`Server running at http://localhost:3000`);
+});
