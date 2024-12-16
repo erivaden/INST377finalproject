@@ -32,7 +32,6 @@ async function fetchColorPalette() {
 	  model: "default",
 	  input: [[0, 0, 0], "N", "N", "N", "N"]
 	};
-  
 	try {
 	  const response = await fetch(url, {
 		method: 'POST',
@@ -41,21 +40,18 @@ async function fetchColorPalette() {
 		},
 		body: JSON.stringify(requestBody),
 	  });
-  
 	  if (!response.ok) throw new Error(`Error: ${response.status}`);
-	  
 	  const data = await response.json();
 	  console.log('Color Palette:', data.result);
 	  displayColorPalette(data.result); 
 	} catch (error) {
-	  console.error('Failed to fetch palette:', error);
+	  console.error('Failed to retrive color palette:', error);
 	}
   }
 
   function displayColorPalette(colors) {
 	const paletteContainer = document.getElementById('palette');
 	paletteContainer.innerHTML = ''; 
-  
 	colors.forEach(color => {
 	  const colorDiv = document.createElement('div');
 	  colorDiv.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
