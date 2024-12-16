@@ -75,6 +75,12 @@ DELETE Endpoints: <br>
    Description: deltes palette by ID <br>
    Response: Confirms message of deletion <br>
 
+# Known Bugs
+1. Unclear error messages: error messages such as invalid file or too large of a file are generic/not user friendly 
+   +workaround: create more descriptive error messages 
+2. Incorrect color palette: if an image is monochromatic or has low contrast images can produce less thoughtful/repetitive color palette.
+   +workaround: add logic to detect such images, and display a warning
+
 # Future Development
 
 Authentication
