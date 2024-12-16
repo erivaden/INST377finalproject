@@ -78,7 +78,7 @@ DELETE Endpoints: <br>
 # Known Bugs
 1. Unclear error messages: error messages such as invalid file or too large of a file are generic/not user friendly  <br> 
    +workaround: create more descriptive error messages  <br>
-2. Incorrect color palette: if an image is monochromatic or has low contrast images can produce less thoughtful/repetitive color palette.  <br>
+2. Incorrect color palette: if an image is monochromatic or has low contrast images can produce less thoughtful/repetitive color palette  <br>
    +workaround: add logic to detect such images, and display a warning  <br>
 
 # Future Development
