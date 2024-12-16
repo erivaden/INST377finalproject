@@ -35,10 +35,10 @@ npm test
 ```
 # The API for your server application
 GET endpoints:
-1. /api/colors
-  Description: retrives all color palettes found in database
+<1. /api/colors >
+  <Description: retrives all color palettes found in database>
   Response: JSON array of palates 
-2. /api/colors/:id
+3. /api/colors/:id 
   Description: Gets details of specific palette based on ID
   Response: JSON object of palette
 
