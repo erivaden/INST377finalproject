@@ -63,6 +63,7 @@ PATCH endpoints: <br>
   /api/colors/:id
   ```
   Request:<br>
+  ```
   {
     "title": "Updated Title"
   }
