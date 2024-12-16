@@ -53,25 +53,25 @@ POST endpoints: <br>
     "image": "<base64-encoded image>"
   }
   ```
-  Response: JSON object of generated palette
+  Response: JSON object of generated palette <br>
 
-PATCH endpoints:
-1. /api/colors
-  Description: Updates metedata for specific palette
+PATCH endpoints: <br>
+1. /api/colors <br>
+  Description: Updates metedata for specific palette <br>
   ```
   /api/colors/:id
   ```
-  Request:
+  Request:<br>
   {
     "title": "Updated Title"
   }
   ```
-  Response: Updated JSON oblect of palette
+  Response: Updated JSON oblect of palette <br>
 
-DELETE Endpoints:
-1. /api/colors/:id
-   Description: deltes palette by ID
-   Response: Confirms message of deletion 
+DELETE Endpoints: <br>
+1. /api/colors/:id <br>
+   Description: deltes palette by ID <br>
+   Response: Confirms message of deletion <br>
 
 # Future Development
 
