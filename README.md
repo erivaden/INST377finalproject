@@ -49,8 +49,9 @@ POST endpoints: <br>
   /api/colors/:id
   ```
   Request:<br>
+  ```
   {
-    'image':'<base64-encoded image>'
+    "image":"<base64-encoded image>"
   }
   ```
   Response: JSON object of generated palette <br>
