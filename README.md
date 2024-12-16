@@ -18,8 +18,21 @@ git clone git@github.com:erivaden/INST377finalproject.git
 ```
 npm install
 ```
-
-
+## How to run your application on a server
+1. Use commanad to start application:
+```
+npm start
+```
+2. By default, the server runs on http://localhost:3000. 
+# How to run any tests you have written for your software
+1. Install testing framework
+```
+npm install --save-dev jest
+```
+2. Run test.
+```
+npm test
+```
 # Future Development
 
 Authentication
