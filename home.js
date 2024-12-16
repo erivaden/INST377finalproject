@@ -1,6 +1,6 @@
 const selectImage = document.querySelector('.select-image');
 const inputFile = document.querySelector('#file');
-const imgArea = document.querySelector('.img-area');
+const imgArea = document.querySelector('.img_area');
 
 selectImage.addEventListener('click', function () {
 	inputFile.click();
@@ -24,7 +24,7 @@ inputFile.addEventListener('change', function () {
 	} else {
 		alert("Image size more than 2MB");
 	}
-})
+});
 
 async function fetchColorPalette() {
 	const url = 'http://colormind.io/api/';
