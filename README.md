@@ -6,5 +6,21 @@ Description of project: Our project's goal is to create a website that analyzes 
 Description of target browsers (iOS? Android? Which ones?): The project is designed to work smoothly on modern browsers, including: iOS Browsers-Safari (latest versions), Android Browsers-Chrome (latest versions), Desktop Browsers-Chrome, Firefox, Edge (latest versions).
 
 
-Link to Developer Manual:
+Developer Manual:
 
+## How to Install Application and Dependencies:
+
+1. Clone github repository in your terminal
+```
+git clone git@github.com:erivaden/INST377finalproject.git
+```
+2. Install dependencies: node.js
+```
+npm install
+```
+
+
+# Future Development
+
+Authentication
+- Add a user authentication to ensure security of data uploads
