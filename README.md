@@ -50,7 +50,7 @@ POST endpoints: <br>
   ```
   Request:<br>
   {
-    "image": "<image>"
+    'image':'<base64-encoded image>'
   }
   ```
   Response: JSON object of generated palette <br>
