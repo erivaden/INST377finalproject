@@ -34,21 +34,21 @@ npm install --save-dev jest
 npm test
 ```
 # The API for your server application
-GET endpoints:
-<1. /api/colors >
-  <Description: retrives all color palettes found in database>
-  Response: JSON array of palates 
-3. /api/colors/:id 
-  Description: Gets details of specific palette based on ID
-  Response: JSON object of palette
+GET endpoints: <br>
+1. /api/colors <br>
+  Description: retrives all color palettes found in database <br>
+  Response: JSON array of palates <br>
+3. /api/colors/:id <br>
+  Description: Gets details of specific palette based on ID <br>
+  Response: JSON object of palette <br>
 
-POST endpoints:
-1. /api/colors
-  Description: Uploads image and generates a color palette using the API
+POST endpoints: <br>
+1. /api/colors <br>
+  Description: Uploads image and generates a color palette using the API <br>
   ```
   /api/colors/:id
   ```
-  Request:
+  Request:<br>
   {
     "image": "<base64-encoded image>"
   }
