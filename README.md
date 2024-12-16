@@ -72,7 +72,7 @@ PATCH endpoints: <br>
 
 DELETE Endpoints: <br>
 1. /api/colors/:id <br>
-   Description: deltes palette by ID <br>
+   Description: deletes palette by ID <br>
    Response: Confirms message of deletion <br>
 
 # Known Bugs
